@@ -1,20 +1,41 @@
+:root {
+
+}
+
 * {
     margin: 0px;
     padding: 0px;
 }
 
+body {
+    background-color: #354f52;
+}
+
 .header {
+    border-style: solid #2f3e46;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 3), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     display: flex;
     justify-content: space-between;
     align-items: center;
+    background-color: #2f3e46;
     padding: 10px;
 }
 
 .name {
-    font-size: 20px;
+    font-family: "Roboto Slab";
+    color: #cad2c5;
+    font-size: 50px;
 }
 
 .navbar a {
-    margin-left: 15px;
     text-decoration: none;
+    color: #cad2c5;
+    font-family: "Roboto Slab";
+}
+
+.navbar {
+    font-family: "Roboto Slab";
+    font-size: 30px;
+    color: #cad2c5;
+    margin-left: 15px;
 }
