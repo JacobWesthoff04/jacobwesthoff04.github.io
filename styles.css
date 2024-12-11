@@ -1,6 +1,4 @@
-:root {
-
-}
+:root {}
 
 * {
     margin: 0px;
@@ -13,11 +11,6 @@ a {
 
 body {
     background-color: #354f52;
-}
-
-iframe {
-    max-width:max-content;
-    max-height: auto;
 }
 
 .header {
@@ -54,7 +47,7 @@ iframe {
 }
 
 .content-container {
-    padding-top: 10%;
+    padding: 10% 0 10%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -79,6 +72,7 @@ iframe {
 .content-box:hover {
     transform: translateY(-20px);
     box-shadow: 0 10px 15px #cad2c5;
+    color: white;
 }
 
 .content-box h1 {
@@ -92,18 +86,90 @@ iframe {
     text-decoration: none;
 }
 
-@media (max-width: 1250px) {
+table {
+    width: 80%;
+    border-collapse: collapse;
+    margin: 20px auto;
+    padding-top: 10%;
+    font-family: "Roboto Slab";
+    color: #cad2c5;
+    box-shadow: 0 10px 15px #cad2c5;
+}
+
+th, td {
+    border: 1px solid #cad2c5;
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background-color: #2f3e46;
+    font-weight: bold;
+}
+
+tr {
+    background-color: #2f3e46;
+}
+
+td a {
+    color: #cad2c5;
+}
+
+td a:hover{
+    text-decoration: none;
+    color: white;
+}
+
+.table-padding {
+    padding-top: 10%;
+}
+
+.table-heading {
+    text-align: center;
+    font-family: "Roboto Slab";
+    color: #cad2c5;
+}
+
+@media (max-width: 1650px) {
     .content-container {
         flex-direction: column;
-        gap: 10px;
+        gap: 20px;
     }
 }
 
-@media (max-width: 900px) {
+@media (max-width: 1100px) {
     .header {
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-content: center;
+    }
+}
+
+@media (max-width: 730px) {
+    a {
+        font-size: 19px;
+    }
+
+    .navbar {
+        font-size: 19px;
+    }
+
+    .name {
+        font-size: 40px;
+    }
+}
+
+@media (max-width: 500px) {
+    a {
+        font-size: 15px;
+    }
+
+    .navbar {
+        font-size: 15px;
+    }
+
+    .name {
+        font-size: 30px;
     }
 }
